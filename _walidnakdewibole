@@ -1,4 +1,18 @@
-walidnaknadinebole
+import random
 
-description: walid cocok same siape ye?
-theme: chill
+def hitung_kecocokan(nama_pasangan):
+    # Menghasilkan persentase kecocokan antara 70% hingga 100%
+    kecocokan = random.randint(70, 100)
+    return kecocokan
+
+def main():
+    print("Selamat datang di aplikasi Kecocokan Pasangan!")
+    nama = input("Masukkan nama Anda: ")
+    pasangan = "Walid"
+    
+    kecocokan = hitung_kecocokan(nama)
+    
+    print(f"Kecocokan antara {nama} dan {pasangan} adalah {kecocokan}%")
+
+if __name__ == "__main__":
+    main()
